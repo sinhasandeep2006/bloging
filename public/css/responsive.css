@@ -33,4 +33,10 @@ h2{
 .top-banner{
    padding: 10.875rem 0 9.375rem;
 }
+/* footer link */
+.footer .footer-link,
+.footer a i{
+padding: 0 0.7rem;
+}
+
 }

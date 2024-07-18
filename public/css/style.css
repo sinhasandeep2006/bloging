@@ -173,7 +173,7 @@ p{
 =====================================================
  */
 .navigation-wrap{
-    position: fixed;
+    position: relative;
     width: 100%;
     left: 01;
     z-index: 1000;
@@ -223,4 +223,33 @@ box-shadow: none;
     background:var(--white-color) ;
     box-shadow: 0 0.125rem 1.75rem 0 rgb(0 ,0, 0,0.9) ;
     transition: all .15s ease-in-out 0s;
+}
+
+
+/* ==================
+  footer
+================== */
+.footer{
+    background: var(--primary-color);
+
+}
+.footer .footer-link{
+    font-size: 1rem;
+    color: var(--white-color);
+    padding: 0 1.875rem;
+}
+.footer .footer-link:hover{
+    color: var(--white-color) !important;
+
+}
+.footer a i{
+    font-size: 1.5rem;
+    color: var(--white-color);
+    padding: 0 1rem;
+}
+
+
+/* Add top margin to section to avoid overlap */
+#book-food {
+    margin-top: 100px; /* Adjust this value as needed */
 }
