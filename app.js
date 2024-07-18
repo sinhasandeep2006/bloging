@@ -1,10 +1,12 @@
 require('dotenv').config();
 const express = require('express');
 const expressLayout = require('express-ejs-layouts')
+const connectdb=require('./server/config/db')
 const app = express();
 const PORT = 3000 || process.env.PORT;
 
-
+//connect to db
+connectdb()
 app.use(express.static('public'));
 // templeting engine
 app.use(expressLayout);

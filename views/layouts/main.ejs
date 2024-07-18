@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title><%= locals.title %></title>
+    <title>Adoughrable.online</title>
     <meta name="description" content="<%= locals.description %>">
     <link rel="stylesheet" href="/css/bootstrap/bootstrap.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
@@ -13,9 +13,11 @@
     <script defer src="/js/script.js"></script>
 </head>
 <body>
-   
+    <div class="container border main_body">
     <%- include('../partials/header.ejs') %>
+    <%- include('../partials/search.ejs') %>
     <%- body %>
     <%- include('../partials/footer.ejs') %>
+</div>
 </body>
 </html>
