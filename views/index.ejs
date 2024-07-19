@@ -22,7 +22,7 @@
                     <% data.forEach(post => { %>
                  
                         <li class="list-group-item d-flex justify-content-between align-items-center">
-                            <a class="nav-link active w-100" aria-current="page" href="#">
+                            <a class="nav-link active w-100" aria-current="page" href="/post/<%= post._id %>">
                                 <div class="d-flex justify-content-between w-100">
                                     <div><%= post.title %></div>
                                     <div class="text-end"><%= new Date(post.createdAt).toLocaleString() %></div>
@@ -31,9 +31,11 @@
                         </li>
                     <% }) %>
                 </ul>
-                <a class="nav-link active" aria-current="page" href="#">
-                    &lt; View Older Posts
-                </a>
+                <% if (nextPage !==null) { %>
+                    <a class="nav-link active" aria-current="page" href="/?page=<%= nextPage %>">
+                        &lt; View Older Posts
+                    </a>
+                <% } %>
             </div>
         </div>
     </div>

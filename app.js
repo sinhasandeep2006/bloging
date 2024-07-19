@@ -7,6 +7,8 @@ const PORT = 3000 || process.env.PORT;
 
 //connect to db
 connectdb()
+app.use(express.urlencoded({extended:true}))
+app.use(express.json())
 app.use(express.static('public'));
 // templeting engine
 app.use(expressLayout);

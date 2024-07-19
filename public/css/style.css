@@ -46,11 +46,9 @@ body{
     font-family: var(--primary-font);
     font-size:100%;
     font-weight: 400;
-    
+    background-color:var(--secondry-color);
 }
-.main_body{
-background-color:var(--secondry-color);
-}
+
 
 /*
 
@@ -264,8 +262,8 @@ search bar design
 ================ */
 
 .searchBar{
-    /* visibility:hidden ; */
-    /* transform: translateY(-100px); */
+    visibility:hidden ;
+    transform: translateY(-100px);
     background-color: var(--primary-color);
     padding: 4px 0;
     /* position: absolute; */
@@ -280,11 +278,12 @@ search bar design
     padding: 0;
 }
 #searchClose{
-    position: absolute;
-    top: 0;
-    right: 0;
-    color: var(--text-color);
+    position:absolute;
+    top: -5px;
+    right:200px;
+    color: var(--secondry-color);
     padding: 15px;
+    font-size:20px;
 
 }
 
@@ -319,4 +318,8 @@ search bar design
     display: flex;
     justify-content: space-between;
     padding: 10px 0;
+  }
+
+  .nodebaba{
+    color: var(--third-color);
   }
