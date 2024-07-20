@@ -1,16 +1,26 @@
-<a href="/dashboard">&larr; Back</a>
-<div class="admin-title">
-  <h2>Add New Post</h2>
+<div class="container ">
+  <a href="/dashboard" class="btn btn-secondary mb-3">&larr; Back</a>
+  <div class="admin-title mb-4">
+    <h2>Add New Post</h2>
+  </div>
+  
+  <form action="/add-post" method="POST" class="needs-validation" novalidate>
+    <div class="mb-3">
+      <label for="title" class="form-label"><b>Title</b></label>
+      <input type="text" class="form-control" id="title" name="title" placeholder="Post Title" required>
+      <div class="invalid-feedback">
+        Please provide a post title.
+      </div>
+    </div>
+  
+    <div class="mb-3">
+      <label for="body" class="form-label"><b>Content</b></label>
+      <textarea class="form-control" id="body" name="body" cols="50" rows="10" placeholder="Post Content" required></textarea>
+      <div class="invalid-feedback">
+        Please provide content for the post.
+      </div>
+    </div>
+  
+    <button type="submit" class="btn main-btn">Add</button>
+  </form>
 </div>
-
-<form action="/add-post" method="POST">
-
-  <label for="title"><b>Title</b></label>
-  <input type="text" placeholder="Post Title" name="title">
-
-  <label for="body"><b>Content</b></label>
-  <textarea name="body" cols="50" rows="10"></textarea>
-
-  <input type="submit" value="Add" class="btn">
-
-</form>
